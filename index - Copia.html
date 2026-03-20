@@ -700,132 +700,26 @@
   }
 
   /* ===== RESPONSIVE ===== */
-
-  /* Tablet */
-  @media (max-width: 900px) {
-    .main-layout {
-      grid-template-columns: 280px 1fr;
-      gap: 20px;
-    }
-
-    .mtg-card {
-      width: 320px;
-      height: 540px;
-    }
-
-    .card-art {
-      height: 115px;
-    }
-
-    .flavor-quote {
-      font-size: 0.9rem;
-    }
-  }
-
-  /* Mobile */
-  @media (max-width: 680px) {
-    .app {
-      padding: 12px;
-    }
-
-    .header {
-      padding: 20px 0 12px;
-    }
-
-    .linkedin-btn {
-      width: 60px;
-      height: 60px;
-    }
-
+  @media (max-width: 700px) {
     .main-layout {
       grid-template-columns: 1fr;
-      gap: 18px;
     }
 
     .calendar-panel {
       position: static;
-      padding: 14px;
-    }
-
-    .month-name {
-      font-size: 0.85rem;
     }
 
     .card-area {
-      margin-top: 0;
-      width: 100%;
-      align-items: center;
+      margin-top: 10px;
     }
 
-    .card-container {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-    }
-
-    /* Card scales to fit screen width */
     .mtg-card {
-      width: min(310px, 88vw);
-      height: calc(min(310px, 88vw) * 1.63);
+      width: 330px;
+      height: 560px;
     }
 
     .card-art {
-      height: calc(min(310px, 88vw) * 0.29);
-    }
-
-    .art-emoji {
-      font-size: 3.5rem;
-    }
-
-    .card-title {
-      font-size: 0.7rem;
-    }
-
-    .flavor-quote {
-      font-size: 0.82rem;
-      line-height: 1.55;
-    }
-
-    .card-verse {
-      font-size: 0.65rem;
-    }
-
-    .card-info {
-      max-width: 100%;
-      padding: 0 8px;
-    }
-
-    .divider {
-      margin: 15px 0;
-    }
-
-    .welcome-state {
-      padding: 20px 10px;
-    }
-
-    .welcome-icon {
-      font-size: 3rem;
-    }
-
-    .welcome-text {
-      font-size: 0.8rem;
-    }
-  }
-
-  /* Very small screens */
-  @media (max-width: 360px) {
-    .mtg-card {
-      width: 92vw;
-      height: calc(92vw * 1.63);
-    }
-
-    .card-art {
-      height: calc(92vw * 0.29);
-    }
-
-    .header-subtitle {
-      font-size: 0.7rem;
-      letter-spacing: 2px;
+      height: 110px;
     }
   }
 
